@@ -35,9 +35,6 @@ body {
 }
 
 .eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 8px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.8rem;
@@ -46,20 +43,23 @@ body {
   font-weight: 600;
 }
 
-.qiskit-logo {
-  width: 18px;
-  height: 18px;
-}
-
 .site-header h1 {
   font-size: 1.9rem;
   line-height: 1.3;
   margin: 0 0 16px;
 }
 
+.byline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
 .authors {
   color: var(--text-muted);
-  margin: 0 0 4px;
+  margin: 0 0 2px;
   font-size: 1rem;
 }
 
@@ -70,7 +70,13 @@ body {
 .affiliation {
   color: var(--text-muted);
   font-size: 0.9rem;
-  margin: 0 0 28px;
+  margin: 0;
+}
+
+.qiskit-logo {
+  height: 44px;
+  width: auto;
+  flex-shrink: 0;
 }
 
 .site-nav {
