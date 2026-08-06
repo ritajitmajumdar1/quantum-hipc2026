@@ -173,6 +173,10 @@ section h2 {
   margin: 0 0 12px;
 }
 
+.speaker-card p:not(.speaker-affiliation):not(.placeholder) {
+  text-align: justify;
+}
+
 .resource-list {
   list-style: none;
   padding: 0;
