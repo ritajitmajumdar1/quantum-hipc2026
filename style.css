@@ -197,6 +197,17 @@ section h2 {
   text-decoration: underline;
 }
 
+.resource-sublist {
+  list-style: decimal;
+  margin: 6px 0 0;
+  padding-left: 24px;
+}
+
+.resource-list .resource-sublist li {
+  padding: 2px 0;
+  border-bottom: none;
+}
+
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 24px 0 40px;
