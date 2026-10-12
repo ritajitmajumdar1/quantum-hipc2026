@@ -196,30 +196,50 @@ section h2 {
 
 .speaker-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+  grid-template-columns: 1fr;
+  gap: 14px;
 }
 
 .speaker-card {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  grid-template-rows: auto 1fr;
+  column-gap: 28px;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 20px;
+  padding: 22px 24px;
 }
 
 .speaker-card h3 {
+  grid-column: 1;
   margin: 0 0 4px;
   font-size: 1.1rem;
 }
 
 .speaker-affiliation {
+  grid-column: 1;
   color: var(--accent);
   font-size: 0.85rem;
   margin: 0 0 12px;
 }
 
-.speaker-card p:not(.speaker-affiliation):not(.placeholder) {
+.speaker-card p:not(.speaker-affiliation) {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  margin: 0;
   text-align: justify;
+  hyphens: auto;
+}
+
+@media (max-width: 640px) {
+  .speaker-card {
+    display: block;
+  }
+
+  .speaker-card p:not(.speaker-affiliation) {
+    text-align: left;
+  }
 }
 
 .resource-list {
