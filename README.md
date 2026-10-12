@@ -2,7 +2,7 @@
 
 **Hybrid Quantum–Classical and Quantum-Centric Supercomputing Workflows for Combinatorial Optimization and Quantum Simulation**
 
-Authors: Ritajit Majumdar, Nick Bronn, Shesha Raghunathan
+Authors: Ritajit Majumdar, Nick Brønn, Shesha Raghunathan
 
 This repo hosts the tutorial website via GitHub Pages: https://ritajitmajumdar1.github.io/quantum-hipc2026/
 
